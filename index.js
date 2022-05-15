@@ -54,13 +54,12 @@ form1.addEventListener('submit', function answers(e){
     if(result == 80 +'%' || result> 80 +'%' || result ==100 +'%') 
     form1.innerHTML = ( "Your score:" + " "+ '<br>' + '<br>'+ result + " " + '<br>'+'<br>'+ "Excellent performance")
 
-
-   else if(result >= 50+'%' && result< 80+'%')
-   form1.innerHTML= ('Your score:' +  '<br>' + '<br>'+" "+ result + " "  + '<br>' + '<br>' +"Fairly Passed")
+    else if(result >= 50+'%' && result< 80+'%')
+    form1.innerHTML= ('Your score:' +  '<br>' + '<br>'+" "+ result + " "  + '<br>' + '<br>' +"Fairly Passed")
  
-   else if(result < 50+'%')
-   form1.innerHTML= ('You score:' + " "+" "+ '<br>' + '<br>'+ result + " "+ '<br>' + '<br>' + "Terribly failed.")
+    else if(result < 50+'%')
+    form1.innerHTML= ('You score:' + " "+" "+ '<br>' + '<br>'+ result + " "+ '<br>' + '<br>' + "Terribly failed.")
  
-   form1.classList.add('center')
+    form1.classList.add('center')
 
 })
