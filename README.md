@@ -20,4 +20,4 @@ omar.mahat@student.moringaschool.com
 ## Veiw Live
 https://omari25.github.io/Javascript-practice-course/
 ## License
-This is under [MIT](https://choosealicense.com/licenses/mit/)
+This is under [MIT](https://choosealicense.com/licenses/mit/) License
