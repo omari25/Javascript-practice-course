@@ -18,6 +18,6 @@ To access this project on your local files, you can clone it using these steps
 ### Contact Info:
 omar.mahat@student.moringaschool.com
 ## Veiw Live
-https://github.com/omari25/Moringa-School-second-assignment
+https://omari25.github.io/Javascript-practice-course/
 ## License
 This is under [MIT] (https://choosealicense.com/licenses/mit/)
