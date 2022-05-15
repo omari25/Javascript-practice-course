@@ -54,7 +54,6 @@ form1.addEventListener('submit', function answers(e){
     if(result == 80 +'%' || result> 80 +'%' || result ==100 +'%') 
     form1.innerHTML = ( "Your score:" + " "+ '<br>' + '<br>'+ result + " " + '<br>'+'<br>'+ "Excellent performance")
 
-
     else if(result >= 50+'%' && result< 80+'%')
     form1.innerHTML= ('Your score:' +  '<br>' + '<br>'+" "+ result + " "  + '<br>' + '<br>' +"Fairly Passed")
  
