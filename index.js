@@ -49,7 +49,7 @@ form1.addEventListener('submit', function answers(e){
     if(q20 == '20')marks++
 
 
-    var result = marks*100/(5)+ +" " + "%"
+    var result = marks*100/(20)+ +" " + "%"
 
     if(result == 80 +'%' || result> 80 +'%' || result ==100 +'%') 
     form1.innerHTML = ( "Your score:" + " "+ '<br>' + '<br>'+ result + " " + '<br>'+'<br>'+ "Excellent performance")
