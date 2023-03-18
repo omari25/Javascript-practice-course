@@ -4,419 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Third IP</title>
+    <title>Test</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Actor&family=Adamina&family=Oxygen&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
+    
+    <div class="wrapper">
+        <h1 style="text-align: center; margin: 10px 0;">Javascript Quiz</h1>
+        <form id="test-form">
+            <div class="question">
+                1. Which built-in method reverses the order of the elements of an array?
+                <div class="option">
+                    <input type="radio" name="q1" id="q1a" value="a">
+                    <label for="q1a">changeOrder(order)</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q1" id="q1b" value="b">
+                    <label for="q1b">reverse()</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q1" id="q1c" value="c">
+                    <label for="q1c">sort(order)</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q1" id="q1d" value="d">
+                    <label for="q1d">None of the above</label>
+                </div>
+            </div>
 
-    <h1>Javascript Quiz</h1>
+            <div class="question">
+                2. Which of the following function of String object returns the character at the specified index?
+                <div class="option">
+                    <input type="radio" name="q2" id="q2a" value="a">
+                    <label for="q2a">charAt()</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q2" id="q2b" value="b">
+                    <label for="q2b">charCodeAt()</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q2" id="q2c" value="c">
+                    <label for="q2c">concat()</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q2" id="q2d" value="d">
+                    <label for="q2d">indexOf()</label>
+                </div>
+            </div>
 
-    <form  id="form1" name="form1" method='GET'>
-        
-        <div class="sec1">
-            <h2>Section One</h2>
+            <div class="question">
+                3. Which of the following function of String object returns a string representing the specified object?
+                <div class="option">
+                    <input type="radio" name="q3" id="q3a" value="a">
+                    <label for="q3a">toLocaleUpperCase()</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q3" id="q3b" value="b">
+                    <label for="q3b">toUpperCase()</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q3" id="q3c" value="c">
+                    <label for="q3c">toString()</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q3" id="q3d" value="d">
+                    <label for="q3d">substring()</label>
+                </div>
+            </div>
+
+            <div class="question">
+                4. Which of the following function of String object causes a string to be displayed in a small font, as if it were in a &ltsmall&gt tag?
+                <div class="option">
+                    <input type="radio" name="q4" id="q4a" value="a">
+                    <label for="q4a">link()</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q4" id="q4b" value="b">
+                    <label for="q4b">small()</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q4" id="q4c" value="c">
+                    <label for="q4c">sup()</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q4" id="q4d" value="d">
+                    <label for="q4d">sub()</label>
+                </div>
+            </div>
+
+            <div class="question">
+                5. Which of the following function of Array object applies a function simultaneously against two values of the array (from left-to-right) as to reduce it to a single value?
+                <div class="option">
+                    <input type="radio" name="q5" id="q5a" value="a">
+                    <label for="q5a">pop()</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q5" id="q5b" value="b">
+                    <label for="q5b">push()</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q5" id="q5c" value="c">
+                    <label for="q5c">reduce()</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q5" id="q5d" value="d">
+                    <label for="q5d">reduceRight()</label>
+                </div>
+            </div>
+
+        </form>
+
+        <button onclick="submitTest()" class="submit-btn">Submit</button>
+
+        <div id="result" class="result" style="display: none;">
+            You scored <span id="score"></span>% on the test.
+            <p id="message"></p>
         </div>
+    </div>
 
-            <div class="firstQ">
-                1. Which one is greater than 4?
-                <div>
-                    <input type="radio" name="quizOne" id="5"  value="5" required>
-                    <label for="5">5</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizOne" value="-5" id="-5">
-                    <label for="-5">-5</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizOne" value="-5" id="-1/2">
-                    <label for="-1/2">-1/2</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizOne" value="-5" id="-25">
-                    <label for="-25">-25</label>
-                </div>
-            </div>
+    <script src="./index.js"></script>
 
-            <div class="secondQ">
-                2. Which one is the smallest?
-                <div>
-                    <input type="radio" name="quizTwo" id="0" value="0" required>
-                    <label for="0">0</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizTwo" id="-6" value="-6" >
-                    <label for="-6">-6</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizTwo" id="1" value="1" >
-                    <label for="1">1</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizTwo" id="1/2" value="1/2" >
-                    <label for="1/2">1/2</label>
-                </div>
-            </div>
-
-            <div class="thirdQ">
-                3. Combine the terms: 12a + 26b - 4b -16a
-                <div>
-                    <input type="radio" name="quizThree" id="4a + 22b" value="a" required>
-                    <label for="4a + 22b">4a + 22b</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizThree" id="-28a + 30b" value="b" >
-                    <label for="-28a + 30b">-28a + 30b</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizThree" id="-4a + 22b" value="c" >
-                    <label for="-4a + 22b">-4a + 22b</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizThree" id="28a + 30b" value="d" >
-                    <label for="28a + 30b">28a + 30b</label>
-                </div>
-            </div>
-
-            <div class="fourthQ">
-                4. Simplify: (4 – 5) – (13 – 18 + 2).
-                <div>
-                    <input type="radio" name="quizFour" id="-1" value="-1" required>
-                    <label for="-1">-1</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizFour" id="-2" value="-2" >
-                    <label for="-2">-2</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizFour" id="3" value="3" >
-                    <label for="3">3</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizFour" id="2" value="2" >
-                    <label for="2">2</label>
-                </div>
-            </div>
-
-            <div class="fifthQ">
-                5. Multiply: (x – 4)(x + 5)
-                <div>
-                    <input type="radio" name="quizFive" id="x2 + 5x - 20" value="x2" required>
-                    <label for="x2 + 5x - 20">x2 + 5x - 20</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizFive" id="x2 - 4x - 20" value="3x" >
-                    <label for="x2 - 4x - 20">x2 - 4x - 20</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizFive" id="x2 - x - 20" value="4x" >
-                    <label for="x2 - x - 20">x2 - x - 20</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizFive" id="x2 + x - 20" value="5x" >
-                    <label for="x2 + x - 20">x2 + x - 20</label>
-                </div>
-            </div>
-
-            <div class="sixthQ">
-                6. Factor: 5x2 – 15x – 20
-                <div>
-                    <input type="radio" name="quizSix" id="5(x-4)(x+1)" value="6" required>
-                    <label for="5(x-4)(x+1)">5(x-4)(x+1)</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizSix" id="-2(x-4)(x+5)" value="">
-                    <label for="-2(x-4)(x+5)">-2(x-4)(x+5)</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizSix" id="-5(x+4)(x-1)" value="">
-                    <label for="-5(x+4)(x-1)">-5(x+4)(x-1)</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizSix" id="5(x+4)(x+1)" value="">
-                    <label for="5(x+4)(x+1)">5(x+4)(x+1)</label>
-                </div>
-            </div>
-
-        <div class="sec1">
-            <h2>Section TWO</h2>
-        </div>
-
-            <div class="seventhQ">
-                7. Which built-in method reverses the order of the elements of an array?
-                <div>
-                    <input type="radio" name="quizSeven" id="changeOrder(order)" value="" required>
-                    <label for="changeOrder(order)">changeOrder(order)</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizSeven" id="reverse()" value="7">
-                    <label for="reverse()">reverse()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizSeven" id="sort(order)" value="">
-                    <label for="sort(order)">sort(order)</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizSeven" id="None of the above" value="">
-                    <label for="None of the above">None of the above</label>
-                </div>
-            </div>
-
-
-            <div class="eighthQ">
-                8. Which of the following function of String object returns the character at the specified index?
-                <div>
-                    <input type="radio" name="quizEight" id="charAt()" value="8" required>
-                    <label for="charAt()">charAt()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizEight" id="charCodeAt()" value="">
-                    <label for="charCodeAt()">charCodeAt()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizEight" id="concat()" value="">
-                    <label for="concat()">concat()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizEight" id="indexOf()" value="">
-                    <label for="indexOf()">indexOf()</label>
-                </div>
-            </div>
-
-            <div class="ninethQ">
-                9. Which of the following function of String object returns a string representing the specified object?
-                <div>
-                    <input type="radio" name="quizNine" id="toLocaleUpperCase()" value="" required>
-                    <label for="toLocaleUpperCase()">toLocaleUpperCase()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizNine" id="toUpperCase()" value="">
-                    <label for="toUpperCase()">toUpperCase()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizNine" id="toString()" value="9">
-                    <label for="toString()">toString()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizNine" id="substring()" value="">
-                    <label for="substring()">substring()</label>
-                </div>
-            </div>
-
-            <div class="tenthQ">
-                10. Which of the following function of String object causes a string to be displayed in a small font, as if it were in a &ltsmall&gt tag?
-                <div>
-                    <input type="radio" name="quizTen" id="link()" value="" required>
-                    <label for="link()">link()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizTen" id="small()" value="10">
-                    <label for="small()">small()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizTen" id="sup()" value="">
-                    <label for="sup()">sup()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizTen" id="sub()" value="">
-                    <label for="sub()">sub()</label>
-                </div>
-            </div>
-
-            <div class="elevenththQ">
-                11. Which of the following function of Array object applies a function simultaneously against two values of the array (from left-to-right) as to reduce it to a single value?
-                <div>
-                    <input type="radio" name="quizEleven" id="pop()" value="" required>
-                    <label for="pop()">pop()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizEleven" id="push()" value="">
-                    <label for="push()">push()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizEleven" id="reduce()" value="">
-                    <label for="reduce()">reduce()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizEleven" id="reduceRight()" value="11">
-                    <label for="reduceRight()">reduceRight()</label>
-                </div>
-            </div>
-
-            <div class="twelvethQ">
-                12. Which of the following function of Array object removes the first element from an array and returns that element?
-                <div>
-                    <input type="radio" name="quizTwelve" id="reverse(" value="" required>
-                    <label for="reverse(">reverse()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizTwelve" id="shift()" value="12">
-                    <label for="shift()">shift()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizTwelve" id="slice()" value="">
-                    <label for="slice()">slice()</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizTwelve" id="some()" value="">
-                    <label for="some()">some()</label>
-                </div>
-            </div>  
-            
-            <div class="thirteenthQ">
-                13. JavaScript File Has An Extension of:
-                <div>
-                    <input type="radio" name="quizThirteen" id=".java" value="" required>
-                    <label for=".java">.java</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizThirteen" id=".js" value="13">
-                    <label for=".js">.js</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizThirteen" id=".javascript" value="">
-                    <label for=".javascript">.javascript</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizThirteen" id=".xml" value="">
-                    <label for=".xml">.xml</label>
-                </div>
-            </div>
-
-            <div class="fourteenthQ">
-                14. Which statement cannot be used to declare a variable in JavaScript?
-                <div>
-                    <input type="radio" name="quizFourteen" id="let" value="" required>
-                    <label for="let">let</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizFourteen" id="var" value="">
-                    <label for="var">var</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizFourteen" id="int" value="14">
-                    <label for="int">int</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizFourteen" id="const" value="">
-                    <label for="const">const</label>
-                </div>
-            </div>
-
-            <div class="fifteenthQ">
-                15. What are variables used for in javascript programs?
-                <div>
-                    <input type="radio" name="quizFifteen" id="Storing" value="15" required>
-                    <label for="Storing">Storing numbers, dates, or other values</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizFifteen" id="Varying" value="">
-                    <label for="Varying">Varying randomly</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizFifteen" id="school" value="">
-                    <label for="school">Causing high-school algera flashbacks</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizFifteen" id="None" value="">
-                    <label for="None">None of the above</label>
-                </div>
-            </div>
-
-            <div class="sixteenthQ">
-                16. Which of the following are capabilities of functions in javascript?
-                <div>
-                    <input type="radio" name="quizSixteen" id="Return" value="" required>
-                    <label for="Return">Return a value</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizSixteen" id="Accept" value="">
-                    <label for="Accept">Accept parameters and return a value</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizSixteen" id="parameters" value="16">
-                    <label for="parameters">Accept parameters</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizSixteen" id="of" value="">
-                    <label for="of">None of the above</label>
-                </div>
-            </div>
-
-            <div class="seventeenthQ">
-                17. Which of the folowing is not a valid javascript variable?
-                <div>
-                    <input type="radio" name="quizSeventeen" id="2names" value="17" required>
-                    <label for="2names">2names</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizSeventeen" id="_first_and_last_names" value="">
-                    <label for="_first_and_last_names">_first_and_last_names</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizSeventeen" id="FirstAndLast" value="">
-                    <label for="FirstAndLast">FirstAndLast</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizSeventeen" id="above" value="">
-                    <label for="above">None of the above</label>
-                </div>
-            </div>
-
-
-            <div class="eighteenthQ">
-                18. How does javascript store dates in a date object?
-                <div>
-                    <input type="radio" name="quizEighteen" id="milliseconds" value="18" required>
-                    <label for="milliseconds">The number of milliseconds since January 1ST, 1970</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizEighteen" id="days" value="">
-                    <label for="days">The number of days since January 1st, 1900</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizEighteen" id="stock" value="">
-                    <label for="stock">The number of seconds since Netscape's public stock offering</label>
-                </div>
-            </div>
-
-            <div class="nineteenthQ">
-                19. Is possible to nest function in javascript?
-                <div>
-                    <input type="radio" name="quizNineteen" id="version" value="19" required>
-                    <label for="version">True</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizNineteen" id="script" value="">
-                    <label for="script">False</label>
-                </div>
-            </div>
-
-            <div class="twentiethQ">
-                20. The ________ method of an array add or removes element from an array
-                <div>
-                    <input type="radio" name="quizTwenty" id="terminal2" value="" required>
-                    <label for="terminal2">Reverse</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizTwenty" id="terminal" value="">
-                    <label for="terminal">Shift</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizTwenty" id="code" value="">
-                    <label for="code">Slice</label>
-                </div>
-                <div>
-                    <input type="radio" name="quizTwenty" id="Splice" value="20">
-                    <label for="Splice">Splice</label>
-                </div>
-            </div>
-        
-        <button class="btn1" type="submit" >Submit</button>
-        <button class="btn2" type="reset">Reset</button>
-
-    </form>
-
-<script src="index.js"></script>
 </body>
 </html>
